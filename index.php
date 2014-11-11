@@ -1,4 +1,5 @@
 <?php
+  //create API key on https://developer.jcdecaux.com/ 
   $url = 'https://api.jcdecaux.com/vls/v1/stations/10025?contract=paris&apiKey=XXX';
   $json = file_get_contents($url);
   $data = json_decode($json,true);
